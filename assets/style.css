@@ -1,0 +1,146 @@
+/*Navbar*/
+.navbar{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#nav a{
+    color: black;
+    font-weight: bold;
+}
+
+#nav li.active a{
+    background-color: #dccee8;
+
+}
+
+.hvr-underline-from-center:before{
+    background-color: #dccee8;
+    height: 5px;
+}
+
+
+/*Rest of Header*/
+.header{
+    background-image: linear-gradient(
+    to right bottom, /*adds a linear gradient on top going left top to right bottom...*/
+    rgba(238, 232, 255, 0.8), /*...specifies the colours and opacity...*/
+    rgba(206, 189, 249, 0.4)),
+    url("img/pinCush.jpeg");  /*...and the. url image underneath it peaking through*/ ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    padding:0;
+    margin: 0;
+}
+
+h1, h2{
+    text-align: right;
+}
+
+h1{
+    margin-right: 5%;
+    margin-top: 8%;
+    font-size: 8em;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #600da8;
+    text-shadow: 0px 0px 15px #ce12c0;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #600da8;
+}
+
+.threadbare, .prices{
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 4em;
+}
+
+.threadbare{
+    margin-right: 16%;
+    margin-top: 5%;
+    
+}
+
+.prices{
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.btn-default{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    transition: all 0.5s;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-default:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    
+}
+
+/*Explanation section*/
+
+.explain{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: black;
+    font-family: Roboto, Sans-serif;
+}
+
+.perks{
+    font-size: 1.5em;
+}
+
+.perk-sign{
+    font-size: 1.7em;
+}
+
+/*How we work*/
+
+
+/*Review*/
+
+
+/*What are we making?*/
+
+
+/*Misc*/
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/*Screen size responsiveness*/
+
+@media(max-width: 1126px){
+    .perks{
+        font-size: 1.2em;
+}
+
+    .perk-sign{
+        font-size: 1.5em;
+}
+}
+
+@media(max-width: 994px){
+    .perk-sign{
+        display: block;
+        margin: 0 auto;
+        font-size: 2em;
+}
+    
+}
