@@ -1,4 +1,13 @@
-/*Navbar*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/*--------------------------Navbar--------------------------*/
 .navbar{
     margin: 0;
     background-color: rgba(255, 255, 255, 0);
@@ -21,12 +30,12 @@
 }
 
 
-/*Rest of Header*/
+/*----------------------Rest of Header-----------------------*/
 .header{
     background-image: linear-gradient(
     to right bottom, /*adds a linear gradient on top going left top to right bottom...*/
     rgba(238, 232, 255, 0.8), /*...specifies the colours and opacity...*/
-    rgba(206, 189, 249, 0.4)),
+    rgba(207, 206, 255, 0.4)),
     url("img/pinCush.jpeg");  /*...and the. url image underneath it peaking through*/ ;
     background-position: top;
     background-repeat: no-repeat;
@@ -34,6 +43,8 @@
     height: 90vh;
     padding:0;
     margin: 0;
+    min-height: 700px;
+    min-width: 100%;
 }
 
 h1, h2{
@@ -43,20 +54,26 @@ h1, h2{
 h1{
     margin-right: 5%;
     margin-top: 8%;
-    font-size: 8em;
+    font-size: 11em;
     font-family: "Encode Sans Condensed", sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 2px;
     color: #600da8;
-    text-shadow: 0px 0px 15px #ce12c0;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 2px;
+    text-shadow: 0px 0px 8px rgba(92, 51, 183, 0.9);
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #600da8;
+    animation-name: moveInRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
 .threadbare, .prices{
     font-family: "Cabin Sketch", sans-serif;
-    font-size: 4em;
+    font-size: 3em;
+    animation-name: moveInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
 .threadbare{
@@ -78,7 +95,7 @@ h1{
     margin: 0 auto;
     border-radius: 3px;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid black;
     transition: all 0.5s;
     font-weight: bold;
@@ -91,7 +108,41 @@ h1{
     
 }
 
-/*Explanation section*/
+@keyframes moveInRight{
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        opacity:0.8;
+        transform: translateX(-15px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInLeft{ /*best to only animate 2 properties for browser performance */
+    0%{ /*what it will be doing before the animation starts */
+        opacity:0; /*ensure it starts off invisible*/
+        transform: translateX(-100px); /*we want to aniimate in the x direction, so it's moving in from the left, this is setting our start position. Because we want it to start form the left, we have to give it a negative value */
+    }
+
+    80%{
+        opacity:0.8;
+        transform: translateX(15px); /*make it kind of bouce to the right a little 80% through the animation before it settles in the middle*/
+    }
+
+    100%{ /*what is will be doing when the animation finishes*/
+        opacity:1;
+        transform: translate(0); /*we use translate 0 so that it'll go to what we've set it to be in teh css above*/
+    }
+}
+
+/*-------------------------------Explanation section----------------------------*/
 
 .explain{
     text-align: center;
@@ -109,22 +160,105 @@ h1{
     font-size: 1.7em;
 }
 
-/*How we work*/
+/*-------------------------How we work and Review section------------------------*/
+
+.row-table{
+    display: table;
+}
+
+.mid-sec{
+    margin: 20px;
+}
+
+.mid-left{
+    background-color: #057751;
+    color: white;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 50px;
+}
+
+.how-work{
+    text-align: center;
+    font-family: "Encode Sans Condensed", sans-serif;
+    margin-bottom: 0;
+}
+
+.timeline-item{
+    padding: 0;
+    margin-top: 0;
+    position: relative;
+    color: #fafafa;
+}
+
+.icon{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.step{
+    margin-bottom: 20px;
+}
+
+.section-column{
+    padding: 0 30px 30px;
+    float:none;
+    display: table-cell;
+}
+
+.review{
+    background-image: linear-gradient(
+    to right bottom, /*adds a linear gradient on top going left top to right bottom...*/
+    rgba(238, 232, 255, 0.85), /*...specifies the colours and opacity...*/
+    rgba(207, 206, 255, 0.85)),
+    url("img/cotton.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mid-right{
+    transform: translateY(20px);
+    
+}
+
+.review-text{
+    text-align: center;
+    font-size: 4.5em;
+    font-family: "Satisfy", sans-serif;
+}
+
+.reviewer{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 50px;
+    font-family: "Encode Sans Condensed", sans-serif;
+}
+
+/*-------------------------What are we making?-------------------------*/
 
 
-/*Review*/
+
+/*-------------------------Footer-------------------------*/
 
 
-/*What are we making?*/
-
-
-/*Misc*/
+/*--------------------------Misc------------------------------*/
 
 .uppercase{
     text-transform: uppercase;
 }
 
-/*Screen size responsiveness*/
+/*-------------------------Screen size responsiveness--------------------------*/
+@media(max-width: 1300px){
+    h1{
+        font-size: 9em;
+    }
+}
 
 @media(max-width: 1126px){
     .perks{
@@ -142,5 +276,37 @@ h1{
         margin: 0 auto;
         font-size: 2em;
 }
+    .section-column{
+        display: block;
+        float: left;
+    }
+}
+
+@media(max-width: 900px){
+    h1{
+        font-size: 6em;
+    }
+    .threadbare, .prices{
+        font-size: 2.5em;
+    }
+    .btn-default{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 767px){
+    .review-text{
+        font-size: 3em;
+    }
     
+    .reviewer{
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 380px){
+    h1{
+        font-size: 5em;
+        text-align: center;
+    }
 }
