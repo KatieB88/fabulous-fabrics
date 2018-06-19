@@ -162,17 +162,21 @@ h1{
 
 /*-------------------------How we work and Review section------------------------*/
 
+
+
 .row-table{
     display: table;
 }
 
 .mid-sec{
     margin: 20px;
+    
 }
 
 .mid-left{
     background-color: #057751;
     color: white;
+   
 }
 
 h3{
@@ -209,6 +213,7 @@ hr{
     padding: 0 30px 30px;
     float:none;
     display: table-cell;
+    -webkit-display: -webkit-table-cell;
 }
 
 .review{
@@ -226,6 +231,8 @@ hr{
     transform: translateY(20px);
     
 }
+
+
 
 .review-text{
     text-align: center;
@@ -280,7 +287,20 @@ hr{
         display: block;
         float: left;
     }
+    
+    .mid-left{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    min-width:100vw;
+    }
+   
+
+    
 }
+
 
 @media(max-width: 900px){
     h1{
