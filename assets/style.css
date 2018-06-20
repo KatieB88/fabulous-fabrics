@@ -163,7 +163,6 @@ h1{
 /*-------------------------How we work and Review section------------------------*/
 
 
-
 .row-table{
     display: table;
 }
@@ -212,8 +211,7 @@ hr{
 .section-column{
     padding: 0 30px 30px;
     float:none;
-    display: table-cell;
-    -webkit-display: -webkit-table-cell;
+    display: table-cell; 
 }
 
 .review{
@@ -232,8 +230,6 @@ hr{
     
 }
 
-
-
 .review-text{
     text-align: center;
     font-size: 4.5em;
@@ -248,6 +244,11 @@ hr{
 }
 
 /*-------------------------What are we making?-------------------------*/
+
+.subtitle{
+    font-size: 2.5em;
+    color: #5b4472;
+}
 
 .what-making{
     text-align: center;
@@ -278,11 +279,36 @@ hr{
 
 /*-------------------------Footer-------------------------*/
 footer{
-    background-color: #525252;
+    background-color: #5e4e6d;
     color: #fafafa;
-    min-height: 120px;
-    margin-top: 10px;
+    min-height: 80px;
+    margin-top: 7px;
+    text-align: center;
 }
+
+.payment{
+    font-size: 30px;
+}
+
+.social-links{
+    margin-top: 16px;
+}
+
+.social-links li a{
+    font-size: 20px;
+    background-color: #bdb6c4;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 30px;
+}
+
+.social-links li a:hover{
+    background-color: white;
+}
+
 
 /*--------------------------Misc------------------------------*/
 
@@ -324,11 +350,9 @@ footer{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    min-width:100vw;
+    min-width:95%;
     }
    
-
-    
 }
 
 
