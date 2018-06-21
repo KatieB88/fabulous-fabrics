@@ -33,10 +33,10 @@ html,body
 /*----------------------Rest of Header-----------------------*/
 .header{
     background-image: linear-gradient(
-    to right bottom, /*adds a linear gradient on top going left top to right bottom...*/
-    rgba(238, 232, 255, 0.8), /*...specifies the colours and opacity...*/
+    to right bottom, 
+    rgba(238, 232, 255, 0.8), 
     rgba(207, 206, 255, 0.4)),
-    url("img/pinCush.jpeg");  /*...and the. url image underneath it peaking through*/ ;
+    url("img/pinCush.jpeg");  
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,20 +125,20 @@ h1{
     }
 }
 
-@keyframes moveInLeft{ /*best to only animate 2 properties for browser performance */
-    0%{ /*what it will be doing before the animation starts */
-        opacity:0; /*ensure it starts off invisible*/
-        transform: translateX(-100px); /*we want to aniimate in the x direction, so it's moving in from the left, this is setting our start position. Because we want it to start form the left, we have to give it a negative value */
+@keyframes moveInLeft{ 
+    0%{ 
+        opacity:0; /*starts off invisible*/
+        transform: translateX(-100px); /*moving in from the left */
     }
 
     80%{
         opacity:0.8;
-        transform: translateX(15px); /*make it kind of bouce to the right a little 80% through the animation before it settles in the middle*/
+        transform: translateX(15px); /*bounce to the right 80% through the animation before it settles in the middle*/
     }
 
     100%{ /*what is will be doing when the animation finishes*/
         opacity:1;
-        transform: translate(0); /*we use translate 0 so that it'll go to what we've set it to be in teh css above*/
+        transform: translate(0); 
     }
 }
 
@@ -210,7 +210,7 @@ hr{
 
 .section-column{
     padding: 0 30px 30px;
-    float:none;
+    float: none;
     display: table-cell; 
 }
 
@@ -253,6 +253,8 @@ hr{
 .what-making{
     text-align: center;
     font-family: "Encode Sans Condensed", sans-serif;
+    border-left: solid #5b4472 300px;
+    border-right: solid #5b4472 300px;
 }
 
 .row {
@@ -261,7 +263,7 @@ hr{
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Creates four equal columns sitting next to each other */
 .column {
     flex: 25%;
     max-width: 25%;
@@ -272,9 +274,6 @@ hr{
     margin-top: 8px;
     vertical-align: middle;
 }
-
-
-
 
 
 /*-------------------------Footer-------------------------*/
@@ -303,20 +302,41 @@ footer{
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .social-links li a:hover{
     background-color: white;
 }
 
+/*------------------------Products------------------------------*/
 
+.thumbnail img {
+    height:250px;
+    width:100%;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  height: 100%;
+}
+
+.content{
+    height:200px;
+}
 /*--------------------------Misc------------------------------*/
 
 .uppercase{
     text-transform: uppercase;
 }
 
-/*-------------------------Screen size responsiveness--------------------------*/
+/*-------------------------Screen size responsiveness Index--------------------------*/
 @media(max-width: 1300px){
     h1{
         font-size: 9em;
@@ -333,6 +353,13 @@ footer{
 }
 }
 
+@media(max-width:1070px){
+    .what-making{
+        border-left: solid #5b4472 200px;
+        border-right: solid #5b4472 200px;
+    }
+}
+
 @media(max-width: 994px){
     .perk-sign{
         display: block;
@@ -345,12 +372,12 @@ footer{
     }
     
     .mid-left{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    min-width:95%;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        min-width:95%;
     }
    
 }
@@ -384,6 +411,10 @@ footer{
         flex: 50%;
         max-width: 50%;
     }
+    .what-making{
+        border-left: none;
+        border-right: none;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -392,7 +423,7 @@ footer{
         flex: 100%;
         max-width: 100%;
     }
-}
+    
 
 
 @media(max-width: 380px){
