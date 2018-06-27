@@ -5,6 +5,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    background-color: #fbf7fc;
 }
 
 /*--------------------------Navbar--------------------------*/
@@ -315,9 +316,14 @@ footer{
 /*------------------------Products------------------------------*/
 
 .thumbnail img {
-    height:250px;
+    height:40%;
     width:100%;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
+
 
 .row.display-flex {
   display: flex;
@@ -325,23 +331,163 @@ footer{
 }
 .thumbnail {
   height: 100%;
+  border: none;
+  background-color: #fbf7fc;
+  
 }
 
 .content{
-    height:200px;
+    height:250px;
 }
+
+.product{
+    margin-top: 30px;
+}
+
+/*----------------------------Sign-up form-----------------------*/
+
+.form-heading{
+    background-color: white;
+    border: solid 1px black;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.sign-up-call{
+    text-align: center;
+}
+
+.sign-up-text{
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.heart-icon{
+    display: block;
+    width:100%;
+    margin: 15px auto;
+    font-size: 50px;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+}
+
+.dropdown{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    
+}
+
+.choose{
+    font-size: 20px;
+}
+
+.pass-text{
+    font-size: 10px;
+}
+
+.padded{
+    padding: 5px 20px;
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.password{
+    margin-bottom: 3px;
+}
+
+select{
+    margin: 0 auto;
+}
+
+.how-hear{
+    font-size: 20px;
+}
+
+.where-heard{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text-area{
+    display: block;
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.btn-form{
+    margin-bottom: 30px;
+}
+
 /*--------------------------Misc------------------------------*/
 
 .uppercase{
     text-transform: uppercase;
 }
 
-/*-------------------------Screen size responsiveness Index--------------------------*/
+.text-mid{
+    text-align: center;
+}
+
+.inline{
+    display: inline;
+}
+/*-------------------------Screen size responsiveness--------------------------*/
+
+@media(max-width: 1700px){
+    .thumbnail img {
+        height:230px;
+        width:320px;
+    }
+}
+
+@media(max-width: 1443px){
+    .thumbnail img {
+        height:200px;
+        width:300px;
+    }
+}
+
+@media(max-width: 1349px){
+    .thumbnail img {
+        height:160px;
+        width:250px;
+    }
+}
+
 @media(max-width: 1300px){
     h1{
         font-size: 9em;
     }
 }
+
+@media(max-width: 1174px){
+    .content{
+    height:300px;
+}
+}
+
+@media(max-width: 1128px){
+    .thumbnail img {
+        height:145px;
+        width:210px;
+    }
+}
+
 
 @media(max-width: 1126px){
     .perks{
@@ -358,6 +504,8 @@ footer{
         border-left: solid #5b4472 200px;
         border-right: solid #5b4472 200px;
     }
+    
+
 }
 
 @media(max-width: 994px){
@@ -382,6 +530,29 @@ footer{
    
 }
 
+@media(max-width: 990px){
+    .thumbnail img {
+        height:280px;
+        width: 400px;
+    }
+    .content{
+    height:200px;
+}
+}
+
+@media(max-width: 930px){
+    .content{
+    height:200px;
+}
+}
+
+@media(max-width: 920px){
+    .thumbnail img {
+        height:240px;
+        width:370px;
+    }
+}
+
 
 @media(max-width: 900px){
     h1{
@@ -392,6 +563,22 @@ footer{
     }
     .btn-default{
         margin-top: 50px;
+    }
+}
+
+
+
+/*@media(max-width: 858px){*/
+/*    .thumbnail img {*/
+/*        height:260px;*/
+/*        width:100%;*/
+/*    }*/
+/*}*/
+
+@media(max-width: 787px){
+    .thumbnail img {
+        height:220px;
+        width:100%;
     }
 }
 
@@ -417,18 +604,83 @@ footer{
     }
 }
 
+@media (max-width: 767px) {
+    .thumbnail img {
+        height:470px;
+        width:100%;
+    }
+}
+
+@media (max-width: 681px) {
+    .thumbnail img {
+        height:430px;
+        width:100%;
+    }
+}
+
+@media (max-width: 667px) {
+    .thumbnail img {
+        height:400px;
+        width:100%;
+    }
+}
+
+@media (max-width: 644px){
+    .thumbnail img {
+        height:380px;
+        width:100%;
+    }
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
     }
-    
+
+@media (max-width: 598px){
+    .thumbnail img {
+        height:360px;
+        width:100%;
+    }
+}
+
+@media (max-width: 548px){
+    .thumbnail img {
+        height:340px;
+        width:100%;
+    }
+}
+
+@media (max-width: 520px){
+    .thumbnail img {
+        height:300px;
+        width:100%;
+    }
+}
+
+@media (max-width: 483px){
+    .thumbnail img {
+        height:260px;
+        width:100%;
+    }
+}
+
+@media (max-width: 440px){
+    .thumbnail img {
+        height:220px;
+        width:100%;
+    }
+}
 
 
 @media(max-width: 380px){
     h1{
         font-size: 5em;
         text-align: center;
+    }
+    .content{
+        height:200px;
     }
 }
