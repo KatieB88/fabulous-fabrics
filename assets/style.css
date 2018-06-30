@@ -363,11 +363,14 @@ footer{
 .sign-up-call{
     text-align: center;
     font-size: 2.4em;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .sign-up-text{
    text-align: center;
    font-size: 1.5em;
+   margin-bottom: 40px;
 }
 
 .heart-icon{
@@ -375,11 +378,12 @@ footer{
     width:100%;
     margin: 15px auto;
     font-size: 50px;
+    margin-bottom: 30px;
 }
 
 input{
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .dropdown{
@@ -398,6 +402,8 @@ input{
 
 .pass-text{
     font-size: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .padded{
@@ -417,6 +423,8 @@ select{
 
 .how-hear{
     font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .where-heard{
@@ -429,15 +437,17 @@ select{
 
 .text-area{
     display: block;
-    width: 370px;
+    width: 225px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 
 .btn-form{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
+
 
 /*---------------------------Tutorial---------------------------*/
 
@@ -598,8 +608,8 @@ audio{
 
 @media(max-width: 1073px){
     .content{
-    height:300px;
-}
+        height:300px;
+    }
 }
 
 @media(max-width:1070px){
