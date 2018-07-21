@@ -1,18 +1,20 @@
+https://katieb88.github.io/fabulous-fabrics/
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Website designed using HTML and CSS. 
 
+Designed to:
 
-Hi there! Welcome to Cloud9 IDE!
+- Explain how the fabfabrics service works and encourage users to sign up.
+- Showcase the products of fabfabrics.
+- Allow users to sign up to the service.
+- Display video tutorials to help users with their products.
+- Play music to accompany use of the product.
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+Testing completed:
 
-Happy coding!
-The Cloud9 IDE team
+- Every page checked on various screen sizes using "toggle device" in chrome. This ranges from iPhone 5 to desktop computer to ensure full functionality and attractiveness is maintained across devices.
+- Also tested moving across pixel screen widths in the browser window as results were sometimes different here. This also ensured that the transitions between screen sizes were logical (ie. no jumping up and down in size of the images on the products page).
+- Tested in Google Chrome and Firefox to ensure functionality across browsers.
+- All links tested on every page to ensure all pages are properly linkek together.
+
+Deployed using github pages.
